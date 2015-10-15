@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/weisjohn/mongoose-latinize/issues"
   },
-  "homepage": "https://github.com/weisjohn/mongoose-latinize#readme"
+  "homepage": "https://github.com/weisjohn/mongoose-latinize#readme",
+  "dependencies": {
+    "latinize": "^0.2.0"
+  }
 }
