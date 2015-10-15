@@ -1,6 +1,6 @@
 {
   "name": "mongoose-latinize",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "store the latin form of a String field for easy searching",
   "main": "index.js",
   "scripts": {

@@ -10,6 +10,7 @@ function models() {
     user = new mongoose.Schema({ 
         first_name: String,
         last_name: String,
+        empty: String,
     });
 
     // utilize simple spec
@@ -17,6 +18,10 @@ function models() {
 
     // utilize complex call
     user.plugin(mongoose_latinize, { prop: 'last_name', json : true, index: false });
+
+    // used to test undefined or null
+    user.plugin(mongoose_latinize, 'empty');
+
     user = mongoose.model('user', user);
 
 }

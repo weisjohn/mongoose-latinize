@@ -1,7 +1,7 @@
 var latinize = require('latinize');
 
 function _latinize(str) {
-    return latinize(str).toLowerCase();
+    return latinize(str || '').toLowerCase();
 }
 
 module.exports = function(schema, config) {
