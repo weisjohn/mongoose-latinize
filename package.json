@@ -25,5 +25,9 @@
   "homepage": "https://github.com/weisjohn/mongoose-latinize#readme",
   "dependencies": {
     "latinize": "^0.2.0"
+  },
+  "devDependencies": {
+    "async": "^1.4.2",
+    "mongoose": "^4.1.11"
   }
 }
