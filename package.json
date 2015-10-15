@@ -1,0 +1,26 @@
+{
+  "name": "mongoose-latinize",
+  "version": "0.0.1",
+  "description": "store the latin form of a String field for easy searching",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weisjohn/mongoose-latinize.git"
+  },
+  "keywords": [
+    "mongoose",
+    "latinize",
+    "plugin",
+    "mongoose",
+    "search"
+  ],
+  "author": "John Weis <weis.john@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weisjohn/mongoose-latinize/issues"
+  },
+  "homepage": "https://github.com/weisjohn/mongoose-latinize#readme"
+}
