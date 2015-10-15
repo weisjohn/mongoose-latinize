@@ -45,3 +45,5 @@ module.exports = function(schema, config) {
     }
 
 }
+
+module.exports.latinize = _latinize;
