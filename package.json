@@ -29,5 +29,8 @@
   "devDependencies": {
     "async": "^1.4.2",
     "mongoose": "^4.1.11"
+  },
+  "scripts": {
+    "test": "node test"
   }
 }
