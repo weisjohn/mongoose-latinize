@@ -35,15 +35,15 @@ module.exports = function(schema, config) {
     });
 
     // hide these properties when calling toJSON
-    if (!!config.json) return;
+    if (config.json) return;
     if (!schema.options.toJSON) schema.options.toJSON = {};
     var fn = schema.options.toJSON.transform;
     schema.options.toJSON.transform = function (doc, ret, options) {
         // remove the latin_prop before returning the result
         delete ret[latin_prop];
-        if (typeof fn === "function") fn(doc, ret, options);
-    }
+        if (typeof fn === 'function') fn(doc, ret, options);
+    };
 
-}
+};
 
 module.exports.latinize = _latinize;
