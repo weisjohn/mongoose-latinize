@@ -7,10 +7,10 @@ var user;
 
 function models() {
 
-    user = new mongoose.Schema({ 
+    user = new mongoose.Schema({
         first_name: String,
         last_name: String,
-        empty: String,
+        empty: String
     });
 
     // utilize simple spec
@@ -76,7 +76,7 @@ function test() {
             user.update({ _id : doc._id }, {
                 first_name : 'Björk',
                 last_name : 'Sigur Rós',
-            }, { upsert : true }, function(err, _doc) {
+            }, { upsert : true }, function(err) {
 
                 assert.equal(err, null);
 
