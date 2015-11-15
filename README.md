@@ -2,7 +2,7 @@
 
 store the latin form of a String field for easy searching
 
-### usage 
+### usage
 
 ```javascript
 var mongoose_latinize = require('mongoose-latinize');
@@ -24,8 +24,8 @@ user1.save(function(err, doc) {
 You can pass a simple string containing the property name (as above), or an object, with the following
 
  - `prop` - string, required - the data source for the `latin_`-prefixed property
- - `index` - bool, defaults `true` - creates an index on the `latin_`-prefixed property for fast searching
- - `json` - bool, defaults `false` - determines whether to include the latinized property when calling `.toJSON()`
+ - `index` - bool, defaults `true` - creates index on the `latin_`-prefixed property
+ - `json` - bool, defaults `false` - include the latinized property when calling `.toJSON()`
 
 For example, to not use an index and to include the properties in JSON transforms:
 
