@@ -23,7 +23,7 @@ module.exports = function(schema, config) {
 
     // a simple pre-validate hook to store the latinize copy
     schema.pre('validate', function latinize_validate_hook(next) {
-        this[latin_prop] = _latinize(this[prop]);
+        if (this[prop] !== undefined) this[latin_prop] = _latinize(this[prop]);
         return next();
     });
 
